@@ -1,0 +1,177 @@
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Traceback (most recent call last):
+  File "salgrad.py", line 51, in <module>
+    dsdx.to_netcdf('/home/dylan/Variability/histograms/dsdx/histograms_dsdx_%i.nc' % y, engine = 'h5netcdf')
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/xarray/core/dataarray.py", line 2664, in to_netcdf
+    return dataset.to_netcdf(*args, **kwargs)
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/xarray/core/dataset.py", line 1644, in to_netcdf
+    return to_netcdf(
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/xarray/backends/api.py", line 1094, in to_netcdf
+    store = store_open(target, mode, format, group, **kwargs)
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/xarray/backends/h5netcdf_.py", line 124, in open
+    import h5netcdf
+ModuleNotFoundError: No module named 'h5netcdf'
+/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/h5netcdf/core.py:763: FutureWarning: String decoding changed with h5py >= 3.0. Currently backwards compatibility with h5py < 3.0 is kept by decoding strings per default. This will change in future versions for consistency with h5py >= 3.0. Setting 'decode_strings=True' forces string decoding.
+  warnings.warn(msg, FutureWarning, stacklevel=0)
+/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/h5netcdf/core.py:763: FutureWarning: String decoding changed with h5py >= 3.0. Currently backwards compatibility with h5py < 3.0 is kept by decoding strings per default. This will change in future versions for consistency with h5py >= 3.0. Setting 'decode_strings=True' forces string decoding.
+  warnings.warn(msg, FutureWarning, stacklevel=0)
+Loading Data
+Data Loaded
+Computing histogam
+Saving histogram
+Traceback (most recent call last):
+  File "salgrad.py", line 52, in <module>
+    dsdx.to_netcdf('/home/dylan/Variability/histograms/dsdx/histograms_dsdx_%i.nc' % y, engine = 'h5netcdf')
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/xarray/core/dataarray.py", line 2664, in to_netcdf
+    return dataset.to_netcdf(*args, **kwargs)
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/xarray/core/dataset.py", line 1644, in to_netcdf
+    return to_netcdf(
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/xarray/backends/api.py", line 1120, in to_netcdf
+    writes = writer.sync(compute=compute)
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/xarray/backends/common.py", line 155, in sync
+    delayed_store = da.store(
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/dask/array/core.py", line 1022, in store
+    result.compute(**kwargs)
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/dask/base.py", line 279, in compute
+    (result,) = compute(self, traverse=False, **kwargs)
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/dask/base.py", line 561, in compute
+    results = schedule(dsk, keys, **kwargs)
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/dask/threaded.py", line 76, in get
+    results = get_async(
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/dask/local.py", line 487, in get_async
+    raise_exception(exc, tb)
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/dask/local.py", line 317, in reraise
+    raise exc
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/dask/local.py", line 222, in execute_task
+    result = _execute_task(task, data)
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/dask/core.py", line 121, in _execute_task
+    return func(*(_execute_task(a, cache) for a in args))
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/dask/array/core.py", line 3908, in store_chunk
+    return load_store_chunk(x, out, index, lock, return_stored, False)
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/dask/array/core.py", line 3897, in load_store_chunk
+    out[index] = np.asanyarray(x)
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/xarray/backends/netCDF4_.py", line 51, in __setitem__
+    data[key] = value
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/h5netcdf/core.py", line 159, in __setitem__
+    self._h5ds[key] = value
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/h5py/_hl/dataset.py", line 945, in __setitem__
+    self.id.write(mspace, fspace, val, mtype, dxpl=self._dxpl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5d.pyx", line 232, in h5py.h5d.DatasetID.write
+  File "h5py/_proxy.pyx", line 114, in h5py._proxy.dset_rw
+OSError: Can't write data (file write failed: time = Tue Feb  9 14:21:45 2021
+, filename = '/home/dylan/Variability/histograms/dsdx/histograms_dsdx_1994.nc', file descriptor = 35, errno = 28, error message = 'No space left on device', buf = 0x7f705875fcc0, total write size = 1002904, bytes this sub-write = 1002904, bytes actually written = 18446744073709551615, offset = 0)
+Exception ignored in: <function CachingFileManager.__del__ at 0x7f7072402d30>
+Traceback (most recent call last):
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/xarray/backends/file_manager.py", line 244, in __del__
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/xarray/backends/file_manager.py", line 222, in close
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/h5netcdf/core.py", line 867, in close
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/h5netcdf/core.py", line 858, in flush
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/h5netcdf/core.py", line 554, in _create_dim_scales
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/h5netcdf/core.py", line 388, in _h5group
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/home/dylan/.conda/envs/copanoenv/lib/python3.8/site-packages/h5py/_hl/group.py", line 288, in __getitem__
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5o.pyx", line 190, in h5py.h5o.open
+  File "h5py/h5i.pyx", line 46, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
